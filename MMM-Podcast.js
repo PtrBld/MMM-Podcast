@@ -37,12 +37,6 @@ Module.register("MMM-Podcast",{
 		}
 		setTimeout(function(){self.timedUpdate},millisTillDownload);
 	},
-    // Override dom generator.
-    getDom: function() {
-		var wrapper = document.createElement("div");
-		this.hide();		
-		return wrapper;
-    },
 	playVideo: function(){
 		this.sendSocketNotification('VIDEO_CHANGED', this.config);
 	},
