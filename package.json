@@ -1,0 +1,26 @@
+{
+  "name": "Magic-Mirror-Module-Podcast",
+  "version": "1.0.0",
+  "description": "This module downloads a video from a podcast url or custom directory (f.e. own server with static video path). Currently it is only possible to use this module in combination with my MMM-Button module but will be by other means in the future",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptrbld/MMM-Podcast"
+  },
+  "keywords": [
+    "magic mirror",
+    "Podcast",
+	"Video",
+    "module",
+  ],
+  "author": "PtrBld",
+  "contributors": "https://github.com/prtbld/MMM-Podcast/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptrbld/MMM-Podcast/issues"
+  },
+  "homepage": "https://github.com/ptrbld/MMM-Podcast#readme",
+"dependencies": {
+    "node-omx": "latest",
+    "omxdirector": "latest"
+    }
+}
