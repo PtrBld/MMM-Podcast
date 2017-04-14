@@ -76,6 +76,7 @@ Mode of this module: PODCAST
 COMMANDS:
 
 SHOW PODCAST
+
 HIDE PODCAST
 
 ## Dependencies
