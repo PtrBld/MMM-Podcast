@@ -59,10 +59,31 @@ Module.register("MMM-Podcast",{
 		});
 	},
 	notificationReceived: function(notification, payload, sender) {
+		 if(notification === "ALL_MODULES_STARTED"){
+			this.sendNotification("REGISTER_VOICE_MODULE", {
+			    mode: "PODCAST",
+			    sentences: [
+				"SHOW PODCAST",
+				"HIDE PODCAST"
+			    ]
+			});
+		    }
 		//register MMM-Button click
-		if(notification == "BUTTON_PRESSED") {
+		else if(notification == "BUTTON_PRESSED") {
 			Log.log(this.name + " received a system notification: " + notification);
 			this.playVideo();
 		}
-	}
+		else if(notification === "VOICE_FOOTBALL" && sender.name === "MMM-voice"){
+			this.checkCommands(payload);
+    		}
+	},	
+	// test for your commands
+	checkCommands: function(data){
+    		if(/(SHOW)/g.test(data) && /(PODCAST)/g.test(data)){
+			this.playVideo();
+		}
+		if(/(HIDE)/g.test(data) && /(PODCAST)/g.test(data)){
+			this.playVideo();
+		}
+    	}
 });
