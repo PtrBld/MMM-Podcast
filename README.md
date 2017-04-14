@@ -1,7 +1,7 @@
 # MMM-Podcast
 This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It can show/hide a video downloaded from a Podcast or a private server (needs static file path).
 Hereby you can use an existing podcast or be able to create your own script to select the displayed videos.
-At the moment you can only display the video by clicking a button ([MMM-Button](https://github.com/ptrbld/MMM-Button).
+At the moment you can only display the video by clicking a button ([MMM-Button](https://github.com/ptrbld/MMM-Button)) or using [MMM-voice](https://github.com/fewieden/MMM-voice).
 
 ## Installation
 1. Navigate into your MagicMirror's `modules` folder and execute `git clone https://github.com/ptrbld/MMM-Podcast.git`. A new folder will appear navigate into it.
@@ -67,6 +67,17 @@ The following properties can be configured:
 	</tbody>
 </table>
 
+## Voice Commands
+
+You need to say your KEYWORD (Default: MAGIC MIRROR), when the KEYWORD is recognized the microphone will start to flash and as long as the microphone is flashing (timeout config option) the mirror will recognize COMMANDS or MODES (Keep in mind that the recognition will take a while, so when you say your COMMAND right before the microphone stops flashing the COMMAND will propably not recognized).
+
+Mode of this module: PODCAST
+
+COMMANDS:
+
+SHOW PODCAST
+HIDE PODCAST
+
 ## Dependencies
 - [node-omx](https://www.npmjs.com/package/node-omx) (installed via `npm install`)
 - [omxdirector](https://www.npmjs.com/package/omxdirector) (installed via `npm install`)
@@ -75,11 +86,11 @@ The following properties can be configured:
 The MIT License (MIT)
 =====================
 
-Copyright © 2016 PtrBld
+Copyright ¬© 2016 PtrBld
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
-files (the ìSoftwareî), to deal in the Software without
+files (the ‚ÄúSoftware‚Äù), to deal in the Software without
 restriction, including without limitation the rights to use,
 copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the
@@ -89,4 +100,4 @@ conditions:
 The above copyright notice and this permission notice shall be
 included in all copies or substantial portions of the Software.
 
-**The software is provided ìas isî, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.**
+**The software is provided ‚Äúas is‚Äù, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.**
