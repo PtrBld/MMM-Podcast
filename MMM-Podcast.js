@@ -73,7 +73,7 @@ Module.register("MMM-Podcast",{
 			Log.log(this.name + " received a system notification: " + notification);
 			this.playVideo();
 		}
-		else if(notification === "VOICE_FOOTBALL" && sender.name === "MMM-voice"){
+		else if(notification === "VOICE_PODCAST" && sender.name === "MMM-voice"){
 			this.checkCommands(payload);
     		}
 	},	
