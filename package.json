@@ -19,8 +19,14 @@
     "url": "https://github.com/ptrbld/MMM-Podcast/issues"
   },
   "homepage": "https://github.com/ptrbld/MMM-Podcast#readme",
+  "scripts": {
+    "postinstall": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron"
+  },
 "dependencies": {
     "node-omx": "latest",
     "omxdirector": "latest"
-    }
+    },
+	"devDependencies": {
+    "electron-rebuild": "^1.2.1"
+  }
 }
