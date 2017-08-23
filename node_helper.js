@@ -29,7 +29,7 @@ module.exports = NodeHelper.create({
 				omx.play("modules/MMM-Podcast/video.mp4");
 			}
 			else{
-				setTimeout(function(){socketNotificationReceived(notification, payload)},2000);
+				setTimeout(function(){self.socketNotificationReceived(notification, payload)},2000);
 			}
 		}
 	},
