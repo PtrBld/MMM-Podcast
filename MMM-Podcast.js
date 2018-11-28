@@ -58,6 +58,11 @@ Module.register("MMM-Podcast",{
 					 self.sendSocketNotification('VIDEO_DOWNLOAD', self.config);					 
 		});
 	},
+	socketNotificationReceived: function(notification, payload) {
+		if (notification === "VIDEO_LOADED"){
+			this.sendNotification("VIDEO_LOADED", payload)
+		}
+	},
 	notificationReceived: function(notification, payload, sender) {
 		 if(notification === "ALL_MODULES_STARTED"){
 			this.sendNotification("REGISTER_VOICE_MODULE", {

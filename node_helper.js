@@ -43,7 +43,8 @@ module.exports = NodeHelper.create({
 		var request = http.get(normalizedUrl, function(response) {
 			response.pipe(file);
 			file.on('finish', function() {
-				file.close(cb);			
+				file.close(cb);	
+				self.sendSocketNotification("VIDEO_LOADED", true);
 			});
 		});
 	},
