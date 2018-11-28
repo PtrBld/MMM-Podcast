@@ -1,6 +1,6 @@
 {
   "name": "Magic-Mirror-Module-Podcast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module downloads a video from a podcast url or custom directory (f.e. own server with static video path). Currently it is only possible to use this module in combination with my MMM-Button module but will be by other means in the future",
   "repository": {
     "type": "git",
