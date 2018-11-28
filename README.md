@@ -67,6 +67,10 @@ The following properties can be configured:
 	</tbody>
 </table>
 
+## Notification
+
+This modules sends a VIDEO_LOADED notification to all modules once the video download is finished.
+
 ## Voice Commands
 
 You need to say your KEYWORD (Default: MAGIC MIRROR), when the KEYWORD is recognized the microphone will start to flash and as long as the microphone is flashing (timeout config option) the mirror will recognize COMMANDS or MODES (Keep in mind that the recognition will take a while, so when you say your COMMAND right before the microphone stops flashing the COMMAND will propably not recognized).
