@@ -1,3 +1,5 @@
+# [Deprecated] Check out [MMM-Podcast2](https://github.com/Ax-LED/MMM-Podcast2)
+
 # MMM-Podcast
 This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It can show/hide a video downloaded from a Podcast or a private server (needs static file path).
 Hereby you can use an existing podcast or be able to create your own script to select the displayed videos.
